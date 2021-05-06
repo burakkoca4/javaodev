@@ -8,7 +8,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		GamerManager gamerManager = new GamerManager(new MernisServiceAdapter());
-		Gamer gamer=new Gamer(1,"Score","Burak","Koca","burak@gmail.com","13825004306",1994);
+		Gamer gamer=new Gamer(1,"Xayalbi","Muhammed Furkan","Alacapunar","burak@gmail.com","40450024638",1994);
 		gamerManager.register(gamer);
 		
 		

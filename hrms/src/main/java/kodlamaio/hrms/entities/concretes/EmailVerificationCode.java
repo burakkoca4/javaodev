@@ -12,18 +12,22 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@Entity
-@Table(name="job_titles")
-@AllArgsConstructor
 @NoArgsConstructor
-public class JobTitle {
+@AllArgsConstructor
+@Entity
+@Table(name="verification_codes")
+public class EmailVerificationCode {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name="id")
 	private int id;
 	
-	@Column(name="title")
-	private String title;
-
-
+	@Column(name="user_id")
+	private int userId;
+	
+	@Column(name="code")
+	private String code;
+	
+	@Column(name="is_verified")
+	private boolean isVerified;
 }

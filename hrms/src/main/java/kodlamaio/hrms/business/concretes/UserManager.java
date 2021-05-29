@@ -26,13 +26,13 @@ public class UserManager implements UserService {
 
 	@Override
 	public DataResult<List<User>> getAll() {
-		return new SuccessDataResult<List<User>>(this.userDao.findAll(), "Data listelendi.");
+		return new SuccessDataResult<List<User>>(this.userDao.findAll(), "Kullanıcılar listelendi.");
 	}
 
 	@Override
 	public Result add(User user) {
 		this.userDao.save(user);
-		return new SuccessResult("Kullanici eklendi.");
+		return new SuccessResult("Kullanıcı eklendi.");
 	}
 
 }
